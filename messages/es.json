@@ -1,4 +1,25 @@
 {
   "admin/test": "teste",
-  "store/test": "teste"
+  "store/test": "teste",
+  "bannerText1": "Pagá a ",
+  "bannerText2": "meses sin tarjeta ",
+  "bannerText3": "con Mercado Pago",
+  "bannerLink": "Ler mais",
+  "modalTitlesH1": "¡Compra ahora e paga después a meses sin tarjeta!",
+  "modalTitles1": "100% online, seguro y sin costo de mantenimiento",
+  "modalTitles2": " ",
+  "modalTitles3": " ",
+  "modalTitlesH2": "¿Cómo funciona?",
+  "modalHowToUse1A": "Al pagar elige ",
+  "modalHowToUse1B": "Mercado Pago. ",
+  "modalHowToUse1C": "Podrás ingresar con tu cuenta o crear una en pocos pasos.",
+  "modalHowToUse2A": " ",
+  "modalHowToUse2B": "Busca Mercado Crédito ",
+  "modalHowToUse2C": "entre las opciones, selecciónalo y elige en cuántas cuotas quieres pagar. ",
+  "modalHowToUse2D": " ",
+  "modalHowToUse3A": "Pagas mes a mes ",
+  "modalHowToUse3B": "como prefieras, desde la app de Mercado Pago.",
+  "modalFAQ1": "¿Dudas? ",
+  "modalFAQ2": "Consulta nuestra FAQ. ",
+  "modalFAQ3": "Crédito sujeto a aprobación."
 }
