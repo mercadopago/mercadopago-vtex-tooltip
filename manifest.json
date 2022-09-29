@@ -1,7 +1,7 @@
 {
   "vendor": "mercadopago",
   "name": "mercadopago-tooltip",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "title": "Mercadopago Tooltip",
   "description": "Tooltip component for product pages",
   "builders": {
