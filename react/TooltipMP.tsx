@@ -45,9 +45,11 @@ function TooltipMP() {
           </div>
           <div className={`${handles.mpTooltipBannerText}`}>
             <span className={`${handles.mpTooltipBannerTextSpan}`}>
-              <FormattedMessage id="bannerText1"/>
-              <strong><FormattedMessage id="bannerText2"/></strong>
-              <FormattedMessage id="bannerText3"/>
+              <FormattedMessage id="bannerText1" />
+              <strong>
+                <FormattedMessage id="bannerText2" />
+              </strong>
+              <FormattedMessage id="bannerText3" />
             </span>
           </div>
           <div className={`${handles.mpTooltipBannerLink}`}>
@@ -57,12 +59,18 @@ function TooltipMP() {
                 href="#"
                 onClick={toggleModal}
               >
-                <FormattedMessage id="bannerLink"/>
+                <FormattedMessage id="bannerLink" />
               </a>
             </span>
           </div>
         </div>
-        <div className={modalVisibility?`${handles.mpTooltipModalVisible}`:`${handles.mpTooltipModalInvisible}`}>
+        <div
+          className={
+            modalVisibility
+            ? `${handles.mpTooltipModalVisible}`
+            : `${handles.mpTooltipModalInvisible}`
+          }
+        >
           <Modal onBackdropClick={toggleModal} />
         </div>
       </header>

@@ -34,18 +34,20 @@ interface ModalProps {
   onBackdropClick: () => void
 }
 
-const Modal: React.FC<ModalProps> = ({onBackdropClick}) => {
+const Modal: React.FC<ModalProps> = ({ onBackdropClick }) => {
   const handles = useCssHandles(CSS_HANDLES)
 
   const ModalContent = () => {
     return (
-      <div >
-        <div className={`${handles.mpTooltipModal}`}onClick={onBackdropClick}>
+      <div>
+        <div className={`${handles.mpTooltipModal}`} onClick={onBackdropClick} >
           <div className={`${handles.mpTooltipModalCentralize}`}>
             <div className={`${handles.mpTooltipModalContainer}`}>
               <div
                 className={`${handles.mpTooltipModalContainerContent}`}
-                onClick={e => {e.stopPropagation()}}
+                onClick={e => {
+                  e.stopPropagation()
+                }}
               >
                 <div className={`${handles.mpTooltipModalContent}`}>
                   <div className={`${handles.mpTooltipModalClose}`}>
@@ -66,17 +68,19 @@ const Modal: React.FC<ModalProps> = ({onBackdropClick}) => {
                   <div className={`${handles.mpTooltipModalTitles}`}>
                     <div>
                       <h1 className={`${handles.mpTooltipModalTitlesH1}`}>
-                        <FormattedMessage id="modalTitlesH1"/>
+                        <FormattedMessage id="modalTitlesH1" />
                       </h1>
                       <span className={`${handles.mpTooltipModalTitlesP}`}>
-                        <FormattedMessage id="modalTitles1"/>
-                        <strong><FormattedMessage id="modalTitles2"/></strong>
-                        <FormattedMessage id="modalTitles3"/>
+                        <FormattedMessage id="modalTitles1" />
+                        <strong>
+                          <FormattedMessage id="modalTitles2" />
+                        </strong>
+                        <FormattedMessage id="modalTitles3" />
                       </span>
                     </div>
                     <div>
                       <h2 className={`${handles.mpTooltipModalTitlesH2}`}>
-                        <FormattedMessage id="modalTitlesH2"/>
+                        <FormattedMessage id="modalTitlesH2" />
                       </h2>
                       <div className={`${handles.mpTooltipModalHowToUse}`}>
                         <div className={`${handles.mpTooltipModalHowToUseChild}`}>
@@ -86,9 +90,11 @@ const Modal: React.FC<ModalProps> = ({onBackdropClick}) => {
                             </span>
                           </div>
                           <span className={`${handles.mpTooltipModalSpanPaddingLeft}`}>
-                            <FormattedMessage id="modalHowToUse1A"/>
-                            <strong><FormattedMessage id="modalHowToUse1B"/></strong>
-                            <FormattedMessage id="modalHowToUse1C"/>
+                            <FormattedMessage id="modalHowToUse1A" />
+                            <strong>
+                              <FormattedMessage id="modalHowToUse1B" />
+                              </strong>
+                            <FormattedMessage id="modalHowToUse1C" />
                           </span>
                         </div>
                         <div className={`${handles.mpTooltipModalHowToUseChild}`}>
@@ -98,10 +104,14 @@ const Modal: React.FC<ModalProps> = ({onBackdropClick}) => {
                             </span>
                           </div>
                           <span className={`${handles.mpTooltipModalSpanPaddingLeft}`}>
-                            <FormattedMessage id="modalHowToUse2A"/>
-                            <strong><FormattedMessage id="modalHowToUse2B"/></strong>
-                            <FormattedMessage id="modalHowToUse2C"/>
-                            <strong><FormattedMessage id="modalHowToUse2D"/></strong>
+                            <FormattedMessage id="modalHowToUse2A" />
+                            <strong>
+                              <FormattedMessage id="modalHowToUse2B" />
+                            </strong>
+                            <FormattedMessage id="modalHowToUse2C" />
+                            <strong>
+                              <FormattedMessage id="modalHowToUse2D" />
+                            </strong>
                           </span>
                         </div>
                         <div className={`${handles.mpTooltipModalHowToUseChild}`}>
@@ -111,8 +121,10 @@ const Modal: React.FC<ModalProps> = ({onBackdropClick}) => {
                             </span>
                           </div>
                           <span className={`${handles.mpTooltipModalSpanPaddingLeft}`}>
-                          <strong><FormattedMessage id="modalHowToUse3A"/></strong>
-                            <FormattedMessage id="modalHowToUse3B"/>
+                          <strong>
+                            <FormattedMessage id="modalHowToUse3A" />
+                          </strong>
+                          <FormattedMessage id="modalHowToUse3B" />
                           </span>
                         </div>
                       </div>
@@ -120,14 +132,14 @@ const Modal: React.FC<ModalProps> = ({onBackdropClick}) => {
                   </div>
                   <div className={`${handles.mpTooltipModalFAQ}`}>
                     <p className={`${handles.mpTooltipModalFAQP}`}>
-                      <FormattedMessage id="modalFAQ1"/>
+                      <FormattedMessage id="modalFAQ1" />
                       <a
                         href="https://www.mercadopago.com"
                         className={`${handles.mpTooltipModalFAQLink}`}
                       >
-                        <FormattedMessage id="modalFAQ2"/>
+                        <FormattedMessage id="modalFAQ2" />
                       </a>
-                      <FormattedMessage id="modalFAQ3"/>
+                      <FormattedMessage id="modalFAQ3" />
                     </p>
                   </div>
                 </div>
