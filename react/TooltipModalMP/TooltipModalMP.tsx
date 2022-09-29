@@ -40,12 +40,12 @@ const Modal: React.FC<ModalProps> = ({ onBackdropClick }) => {
   const ModalContent = () => {
     return (
       <div>
-        <div className={`${handles.mpTooltipModal}`} onClick={onBackdropClick} >
+        <div className={`${handles.mpTooltipModal}`} onClick={onBackdropClick}>
           <div className={`${handles.mpTooltipModalCentralize}`}>
             <div className={`${handles.mpTooltipModalContainer}`}>
               <div
                 className={`${handles.mpTooltipModalContainerContent}`}
-                onClick={e => {
+                onClick={(e) => {
                   e.stopPropagation()
                 }}
               >
@@ -83,8 +83,12 @@ const Modal: React.FC<ModalProps> = ({ onBackdropClick }) => {
                         <FormattedMessage id="modalTitlesH2" />
                       </h2>
                       <div className={`${handles.mpTooltipModalHowToUse}`}>
-                        <div className={`${handles.mpTooltipModalHowToUseChild}`}>
-                          <div className={`${handles.mpTooltipModalBlueCircle}`}>
+                        <div
+                          className={`${handles.mpTooltipModalHowToUseChild}`}
+                        >
+                          <div
+                            className={`${handles.mpTooltipModalBlueCircle}`}
+                          >
                             <span className={`${handles.mpTooltipModalSpan}`}>
                               1
                             </span>

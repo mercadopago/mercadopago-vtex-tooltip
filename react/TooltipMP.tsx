@@ -67,8 +67,8 @@ function TooltipMP() {
         <div
           className={
             modalVisibility
-            ? `${handles.mpTooltipModalVisible}`
-            : `${handles.mpTooltipModalInvisible}`
+              ? `${handles.mpTooltipModalVisible}`
+              : `${handles.mpTooltipModalInvisible}`
           }
         >
           <Modal onBackdropClick={toggleModal} />
