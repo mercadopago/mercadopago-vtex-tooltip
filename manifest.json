@@ -13,6 +13,15 @@
   "dependencies": {
     "vtex.css-handles": "0.x"
   },
+  "billingOptions": {
+    "free": true,
+    "type": "free",
+    "availableCountries": [
+      "ARG",
+      "BRA",
+      "MEX"
+    ]
+  },
   "registries": [
     "smartcheckout"
   ],
