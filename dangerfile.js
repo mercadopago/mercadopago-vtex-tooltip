@@ -2,10 +2,6 @@
 const { verify } = require('@vtex/danger')
 
 const config = {
-  // Set to true to enforce keepachangelog rules.
-  // keepachangelog: {
-  //   changeVersion: false,
-  // },
   rules: {
     description: ['fail', { minLength: 20 }],
     assignee: 'fail',
