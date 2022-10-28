@@ -1,0 +1,30 @@
+{
+  "vendor": "mercadopago",
+  "name": "mercadopago-tooltip",
+  "version": "1.0.2",
+  "title": "Mercadopago Tooltip",
+  "description": "Tooltip component for product pages",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.css-handles": "0.x"
+  },
+  "billingOptions": {
+    "free": true,
+    "type": "free",
+    "availableCountries": [
+      "ARG",
+      "BRA",
+      "MEX"
+    ]
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
